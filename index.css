@@ -1,0 +1,463 @@
+/* La belle aurora */
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+/* Kaushan script */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=La+Belle+Aurore&display=swap');
+/* Kavivnar */
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+/* Fuggles */
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+/* Great vibes */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* Grape Nuts */
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+/* Guppo */
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+/* Handlee */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+body {
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+:root{
+    --def_size:4rem;
+    --ani_size: 4rem;
+
+}
+#Logo-name {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    width: 41rem;
+    height: 7rem;
+}
+
+#logo {
+    display: flex;
+    background-image: url(logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+}
+
+#Logo-name #name {
+    display: flex;
+    font-size: 4rem;
+    font-family: "Moon Dance", cursive;
+    text-shadow: 5px 4px 7px rgba(0, 23, 227, 0.30);
+    backdrop-filter: blur(1px);
+    color: #02f3ff;
+    margin-top: -3rem;
+    margin-left: 4rem;
+}
+
+#show {
+    /* background-color: rgb(22, 21, 21); */
+    background: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    width: 45rem;
+    height: 29rem;
+    margin-top: 2rem;
+    margin-left: 16rem;
+    border-top: 1rem solid white;
+    border-left: 1rem solid white;
+    border-right: .5rem solid white;
+    border-bottom: .5rem solid white;
+    filter: brightness(1.4);
+}
+
+/* .main_text_ani{
+    font-size : 3rem;
+
+} */
+
+.main-text{
+    font-size: var(--def_size);
+}
+.ani_main-text{
+    animation :show_anim .5s linear 0s 1 forwards;
+}
+
+@keyframes show_anim {
+    0%{
+        font-size: var(--def_size);
+    }
+    100%{
+        font-size: var(--ani_size);
+    }
+    
+}
+
+
+.text {
+    display: flex;
+    position: relative;
+    margin-top: -2rem;
+    color: aquamarine;
+    font-family: 'Moon Dance', cursive;
+    justify-content: center;
+    /* filter: brightness(2); */
+
+}
+
+#tfront {
+    z-index: 2;
+    -webkit-text-stroke-width: 13px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    filter: opacity(.05);
+}
+
+#tbehind {
+    /* filter: blur(7px); */
+    z-index:1;
+    position: absolute;
+    margin-left: 0rem;
+}
+#tmiddle {
+    filter: blur(7px);
+    z-index:1;
+    position: absolute;
+    margin-left: 0rem;
+}
+
+#vertical-menu-bar {
+    display: flex;
+    background: black;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 31rem;
+    margin-top: -31rem;
+    margin-left: 68rem;
+    border: 3px solid white;
+}
+
+#vertical-menu-bar span {
+    /* display: none; */
+    font-size: 3rem;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+    margin-top: -2.8rem;
+    margin-left: 6rem;
+}
+
+#text-box {
+    display: flex;
+    width: 19rem;
+    height: 4rem;
+    border-radius: .6rem;
+    background-color: black;
+    margin-top: 2rem;
+    margin-left: -13.2rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Moon Dance';
+    border: 3px solid whitesmoke;
+    font-weight: bolder;
+}
+
+#colors .color {
+    background-color: black;
+    border-radius: .5rem;
+    width: 8rem;
+    height: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1rem;
+    margin-left: 2.5rem;
+    text-align: center
+}
+
+#colors table {
+    background: black;
+    border-radius: .5rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    height: 2rem;
+}
+
+#colors {
+    display: flex;
+    width: 19rem;
+    height: 5rem;
+    margin-top: 8rem;
+    margin-left: -19.4rem;
+    background: white;
+    border: 2px solid red;
+    border-radius: 1rem;
+}
+
+#size .size {
+    border-radius: .6rem;
+    width: 6rem;
+    height: 2rem;
+    color: white;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-top: -1rem;
+    margin-left: 6rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.7rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#size {
+    display: flex;
+    margin-top: 7.8rem;
+    margin-left: -19rem;
+    width: 18.5rem;
+    height: 9rem;
+}
+
+#size ul {
+    margin-top: 1.3rem;
+    margin-left: -11.9rem;
+    width: 18rem;
+    height: 6.8rem;
+    border-radius: .5rem;
+    padding: 0rem 0rem;
+}
+
+#size .sizeno {
+    font-size: 1.5rem;
+    color: white;
+    font-family: Moon Dance;
+    border-radius: .3rem;
+    margin: .3rem 0rem;
+    border: 2px solid white;
+    width: 18rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+#board-style {
+    display: flex;
+    margin-top: 18rem;
+    margin-left: -19rem;
+    width: 19rem;
+    height: 8rem;
+    border: 2px solid white;
+    border-radius: 0.55rem;
+}
+
+#board-style .brd {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 0rem;
+    margin-left: 6rem;
+    font-family: cursive;
+}
+
+#board-style ul {
+    display: flex;
+    width: 15rem;
+    height: 6rem;
+    /* border: 2px solid white; */
+    margin-top: 1.2rem;
+    margin-left: -14rem;
+    /* justify-content: center; */
+    column-gap: 4rem;
+}
+
+#board-style .bstyle {
+    width: 7rem;
+    height: 4rem;
+    margin: 1.4rem -0.8rem;
+    border-radius: .5rem;
+}
+
+/* #board-style ul li{
+    width: 7rem;
+    height: 3rem;
+    margin: 0rem 0rem;
+}
+
+/* #board-style img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem 0rem;
+} */
+
+
+#color_pallete {
+    display: flex;
+    width: 3rem;
+    height: 31rem;
+    margin-top: -31rem;
+    margin-left: 63.3rem;
+    border: 2px solid white;
+    border-radius: 3rem;
+}
+
+#color_pallete .color {
+    margin-top: 1rem;
+    margin-left: 0.4rem;
+    font-size: 1.2rem;
+    font-family: 'Moon Dance';
+    color: white;
+}
+
+#color_pallete ul {
+    margin-top: 2rem;
+    margin-left: -4.1rem;
+    width: 2rem;
+    height: 25.4rem;
+
+}
+
+#color_pallete ul li {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 1rem -.7rem;
+    border-radius: 3rem;
+    /* filter: brightness(2); */
+}
+
+#red{
+    background: red;
+    filter: brightness(2);
+}
+#white{
+    background:white;
+}
+#green{
+    background:#30ff30;
+    filter: brightness(2);
+
+}
+#neon-green{
+    background:rgb(0, 255, 98);
+    filter: brightness(2);
+}
+#off-white{
+    background:rgb(249, 236, 160);
+}
+#pink{
+    background:rgb(226, 38, 117);
+    filter: brightness(2);
+}
+#purple{
+    background:purple;
+}
+#orange{
+    background:#ff7f16;
+}
+#blue{
+    background:blue;
+    /* filter: brightness(2); */
+}
+#neon-blue{
+    background: #02f3ff;
+    filter: brightness(2);
+}
+
+/* // text Area */
+
+#line-menu-bar{
+    display: flex;
+    border: 2px solid white;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 32rem;
+    margin-top: -31.5rem;
+    margin-left: 0rem;
+}
+#text-style ul{
+    /* display: flex; */
+    margin: 0rem 0rem;
+    overflow-y: scroll;
+    height: 32rem;
+    width: 12.6rem;
+    align-items: center;
+}
+#text-style .tstle{
+    border: 2px solid white;
+    font-size: 2rem;
+    color: white;
+    /* font-family: "Moon Dance"; */
+    border-radius: .5rem;
+    margin: 2rem -1rem;
+    width: 12rem;
+    height: 3rem;
+    /* padding: 0rem 2rem; */
+    text-align: center;
+}
+#text-style .tstle:hover{
+    /* width: 13rem; */
+    height: 4rem;
+    animation-name: hv;
+    animation-timing-function: linear;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    /* line-height: 1.5rem; */
+}
+@keyframes hv{
+    0%{
+        margin: 2rem -1rem;
+        height: 3rem;
+        width: 12rem;
+        line-height: 3rem;
+    }
+    100%{
+        height: 4rem;
+        width: 12.5rem;
+        line-height: 4rem;
+        margin: 2rem -1.3rem;
+        border-radius: 2rem;
+        font-size: 1.6rem;
+    }
+}
+
+::-webkit-scrollbar{
+    width:.6rem;
+    height: 4rem;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    border: 2px solid white;
+    width: 1rem;
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 2rem;
+    border: 2px solid black;
+}
+
+#tstyle1{
+    font-family: 'Moon Dance';
+}
+#tstyle2{
+    font-family: 'Gruppo';
+}
+#tstyle3{
+    font-family: 'Great Vibes';
+}
+#tstyle4{
+    font-family: 'Handlee';
+}
+#tstyle5{
+    font-family: 'La Belle Aurore';
+}
+#tstyle6{
+    font-family: 'Fuggles';
+}
+#tstyle7{
+    font-family: 'Kavivanar';
+}
+#tstyle8{
+    font-family: 'Grape Nuts';
+}
