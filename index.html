@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyMoon Neon Signs</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- //fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="Logo-name">
+        <div id="logo"></div>
+        <p id="name">KeyMOon</p>
+    </div>
+    <div id="show">
+        <div class="text">
+            <p class="main-text" id="tfront">KeyMOon</p>
+            <p class="main-text" id="tbehind">KeyMOon</p>
+            <p class="main-text" id="tmiddle">KeyMOon</p>
+        </div>
+    </div>
+    <div id="color_pallete">
+        <p class="color">Colors</p>
+        <ul>
+            <li class="clr" id="red" onclick="clr(0,'red')"></li>
+            <li class="clr" id="green" onclick="clr(1,'#30ff30')"></li>
+            <li class="clr" id="neon-green" onclick="clr(2,'rgb(0, 255, 98)')"></li>
+            <li class="clr" id="blue" onclick="clr(3,'blue')"></li>
+            <li class="clr" id="neon-blue" onclick="clr(4,'#02f3ff')"></li>
+            <li class="clr" id="pink" onclick="clr(5,'rgb(226, 38, 117)')"></li>
+            <li class="clr" id="purple" onclick="clr(6,'purple')"></li>
+            <li class="clr" id="orange" onclick="clr(7,'orange')"></li>
+            <li class="clr" id="white" onclick="clr(8,'white')"></li>
+            <li class="clr" id="off-white" onclick="clr(9,'rgb(251 240 175)')"></li>
+        </ul>
+    </div>
+    <div id="vertical-menu-bar">
+        <span>Menu</span>
+        <input type="text" name="text" id="text-box" placeholder="KeyMOon" oninput="text_change()">
+        
+        <div id="size">
+            <p class="size">Sizes</p>
+            <ul>
+                <li class="sizeno" id="small" onclick="chng_size(0)">Small</li>
+                <li class="sizeno" id="medium" onclick="chng_size(1)">Medium</li>
+                <li class="sizeno" id="large" onclick="chng_size(2)">Large</li>
+            </ul>
+        </div>
+        <div id="board-style">
+            <p class="brd">Board Style</p>
+            <ul>
+                <li><img src="st1.png" alt="style1" class="bstyle" id="styl1"></li>
+                <li><img src="st2.png" alt="style2" class="bstyle" id="styl2"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="line-menu-bar">
+        <div id="text-style">
+            <ul>
+                <li class="tstle" id="tstyle1" onfocus="elmnt(0)" onclick="text_style(0)">Iron Man</li>
+                <li class="tstle" id="tstyle2" onfocus="elmnt(1)" onclick="text_style(1)">Doom</li>
+                <li class="tstle" id="tstyle3" onfocus="elmnt(2)" onclick="text_style(2)">WoW</li>
+                <li class="tstle" id="tstyle4" onfocus="elmnt(3)" onclick="text_style(3)">Paris</li>
+                <li class="tstle" id="tstyle5" onfocus="elmnt(4)" onclick="text_style(4)">Gruppo</li>
+                <li class="tstle" id="tstyle6" onfocus="elmnt(5)" onclick="text_style(5)">Nut Cracker</li>
+                <li class="tstle" id="tstyle7" onfocus="elmnt(6)" onclick="text_style(6)">Climax</li>
+                <li class="tstle" id="tstyle8" onfocus="elmnt(7)" onclick="text_style(7)">Cafe Tour</li>
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
